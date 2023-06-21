@@ -1,0 +1,283 @@
+body {
+  font-size: 62.5%;
+}
+
+@media (max-width: 103em) {
+  .main2 {
+    width: 57.5%;
+  }
+  .pro-box {
+    width: 50%;
+  }
+  .pro-box-text {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 82.5em) {
+  .main-main-main {
+    width: 425px;
+  }
+  .secondary-content {
+    width: 375px;
+  }
+  .lower-main {
+    height: fit-content;
+  }
+  .pro-box {
+    width: 55%;
+  }
+}
+@media (max-width: 69em) {
+  .main-main-main {
+    transform: translate(50%, -50%);
+  }
+  .main-main-cont {
+    width: 100%;
+    transform: translate(20%, -10%);
+  }
+  .main2 {
+    width: 80%;
+  }
+  .pro-box {
+    width: 62.5%;
+  }
+}
+@media (max-width: 60em) {
+  .container {
+    height: 80rem;
+  }
+  .main {
+    height: 60rem;
+  }
+  .main-1-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .main-main-main {
+    transform: translate(0%, 0%);
+    position: relative;
+    top: -12.5%;
+    z-index: 0;
+    height: 40rem;
+    width: 75%;
+  }
+  .main-main-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navBar {
+    height: 20rem;
+    position: static;
+  }
+  .some-space {
+    display: block;
+  }
+  .list-cont {
+    /* display: none; */
+  }
+  .ion1 {
+    display: block;
+  }
+  .main-main-2 {
+    background-color: #e6dace;
+    padding: 3rem;
+    margin: 0;
+  }
+  .button1 {
+    display: block;
+  }
+  .lower-main {
+    height: 15rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 2fr;
+    /* background-color: aqua; */
+    padding-top: 5rem;
+    height: 12rem;
+  }
+  .lower2 {
+    margin-top: 2rem;
+    grid-row: 1;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    gap: 0;
+  }
+  .lower1 {
+    grid-row: -1;
+  }
+  /* .list-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transform: translateX(100%);
+  } */
+  .list {
+    flex-direction: column;
+  }
+  .lowerfix1 {
+    padding: 0;
+    margin-top: 0;
+    /* height: fit-content; */
+    height: 9rem;
+  }
+  .pro-box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 52em) {
+  .res-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr;
+    /* row-gap: 7.5rem; */
+    height: 30rem;
+  }
+  .info {
+    top: 0;
+    left: 0;
+    padding: 2rem;
+  }
+  #fix3 {
+    padding: 0rem 2rem;
+  }
+  .pro-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 45em) {
+  .lower-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .head-text-box {
+    display: block;
+  }
+  .head-text {
+    align-items: flex-start;
+  }
+  #id-3 {
+    margin-top: 0.5rem;
+  }
+  .res-box {
+    height: 32rem;
+  }
+  #res-box-fix {
+    height: 27.5rem;
+  }
+  .pro-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .dzs {
+    width: 350px;
+    height: 125px;
+  }
+  .zscale {
+    width: 300px;
+    height: 100px;
+  }
+  .ni{
+    width: 325px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 38em) {
+  .name-profession {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .res-box {
+    height: 35rem;
+  }
+  .resume-head {
+    font-size: 2.7rem;
+  }
+  .heading {
+    /* align-items: baseline; */
+  }
+  .main2-head h1 {
+    font-size: 1.4rem;
+  }
+  .btn-cv {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.9rem;
+  }
+  .dot {
+    /* margin-top: 1rem; */
+  }
+  .main-main-2 {
+    padding: 5rem;
+  }
+  .main-main-2 {
+    position: relative;
+    top: 20%;
+  }
+  .main-main-cont {
+    transform: translate(0%, 0%);
+    padding: 0;
+    position: absolute;
+    top: -25%;
+  }
+  .lower2 {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .column {
+    align-items: flex-start;
+  }
+  form{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 30em) {
+  .res-box {
+    height: 45rem;
+  }
+  .main-content {
+    align-items: center;
+    width: 80%;
+  }
+  .secondary-content {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 4rem;
+  }
+  .main-main-cont {
+    transform: translateX();
+  }
+  .main-main-main {
+    height: 35rem;
+    width: 20.5rem;
+  }
+  .main-main-2 {
+    justify-content: center;
+    text-align: center;
+  }
+  .main-content {
+    justify-content: center;
+    width: 100%;
+  }
+  .lower2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .elements {
+    grid-template-columns: 1fr;
+  }
+}
