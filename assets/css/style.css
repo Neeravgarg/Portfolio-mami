@@ -541,6 +541,7 @@ ion-icon {
   cursor: pointer;
   font-weight: 300;
   border-bottom: 2px solid transparent;
+  text-align: center;
 }
 .nav-li:hover,
 .nav-li:active {

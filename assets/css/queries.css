@@ -187,9 +187,21 @@ body {
     width: 300px;
     height: 100px;
   }
-  .ni{
+  .ni {
     width: 325px;
     height: 125px;
+  }
+  .snow {
+    width: 375px;
+    height: 250px;
+  }
+  .grazitti {
+    height: 275px;
+    height: 190px;
+  }
+  .pro-box-img{
+    padding: 0;
+    padding: 1rem;
   }
 }
 
@@ -240,7 +252,7 @@ body {
   .column {
     align-items: flex-start;
   }
-  form{
+  form {
     grid-template-columns: 1fr;
   }
 }
