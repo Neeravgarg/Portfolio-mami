@@ -294,6 +294,7 @@ a {
 .head-link {
   font-weight: 200;
   color: #555;
+  text-decoration: none;
 }
 .none {
   display: none;

@@ -1,4 +1,8 @@
 const list = document.querySelectorAll(".nav-li");
+const main1 = document.querySelector(".main-1-main");
+const main2 = document.querySelector(".main-2-main");
+const main3 = document.querySelector(".main-3-main");
+const main4 = document.querySelector(".main-4-main");
 
 function activeLink() {
   list.forEach((item) => item.classList.remove("active"));
@@ -17,19 +21,19 @@ function secondFunction() {
 }
 function resume() {
   theFunction();
-  document.querySelector(".main-1-main").classList.add("none");
-  document.querySelector(".main-2-main").classList.remove("none");
-  document.querySelector(".main-3-main").classList.add("none");
-  document.querySelector(".main-4-main").classList.add("none");
+  main1.classList.add("none");
+  main2.classList.remove("none");
+  main3.classList.add("none");
+  main4.classList.add("none");
 
   secondFunction();
 }
 function projects() {
   theFunction();
-  document.querySelector(".main-1-main").classList.add("none");
-  document.querySelector(".main-2-main").classList.add("none");
-  document.querySelector(".main-3-main").classList.remove("none");
-  document.querySelector(".main-4-main").classList.add("none");
+  main1.classList.add("none");
+  main2.classList.add("none");
+  main3.classList.remove("none");
+  main4.classList.add("none");
   secondFunction();
 }
 
@@ -38,10 +42,10 @@ document.querySelector(".mobilenav").addEventListener("click", () => {
 });
 document.querySelector(".about").addEventListener("click", () => {
   theFunction();
-  document.querySelector(".main-1-main").classList.remove("none");
-  document.querySelector(".main-2-main").classList.add("none");
-  document.querySelector(".main-3-main").classList.add("none");
-  document.querySelector(".main-4-main").classList.add("none");
+  main1.classList.remove("none");
+  main2.classList.add("none");
+  main3.classList.add("none");
+  main4.classList.add("none");
   document.querySelector(".some-space").classList.remove("none");
   document.querySelector(".lower-main").classList.remove("lowerfix1");
 });
@@ -49,9 +53,26 @@ document.querySelector(".resume").addEventListener("click", resume);
 document.querySelector(".project").addEventListener("click", projects);
 document.querySelector(".contact").addEventListener("click", () => {
   theFunction();
-  document.querySelector(".main-1-main").classList.add("none");
-  document.querySelector(".main-2-main").classList.add("none");
-  document.querySelector(".main-3-main").classList.add("none");
-  document.querySelector(".main-4-main").classList.remove("none");
+  main1.classList.add("none");
+  main2.classList.add("none");
+  main3.classList.add("none");
+  main4.classList.remove("none");
   secondFunction();
 });
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const contProj = document.querySelectorAll(".pro-box");
+const contRes = document.querySelectorAll(".fix-box");
+
+contProj.forEach((el) => observer.observe(el));
+contRes.forEach((el) => observer.observe(el));

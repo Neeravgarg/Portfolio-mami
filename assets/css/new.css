@@ -87,3 +87,12 @@ ion-icon {
     right: 0;
   } */
 }
+.hidden {
+  transform: translateX(-30%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.show {
+  opacity: 1;
+  transform: translateX(0%);
+}
