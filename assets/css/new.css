@@ -89,10 +89,12 @@ ion-icon {
 }
 .hidden {
   transform: translateX(-30%);
+  filter: blur(5px);
   opacity: 0;
   transition: all 0.3s;
 }
 .show {
+  filter: blur(0px);
   opacity: 1;
   transform: translateX(0%);
 }
